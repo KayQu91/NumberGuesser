@@ -9,8 +9,9 @@ while True:
     if user_guess.isdigit():
         user_guess = int(user_guess)
         if user_guess == random_number:
-            print(
-                f"You guessed right!'\n'The correct answer is {random_number}!")
+            wrong_guess += 1
+            print("You guessed right!")
+            print(f"The correct answer is {random_number}!")
             print(f"You needed {wrong_guess} tries!")
             quit()
         elif user_guess > random_number:
@@ -21,4 +22,5 @@ while True:
             wrong_guess += 1
     else:
         print("Please type a number between 0 and 20!")
+        wrong_guess += 1
         continue
