@@ -1,9 +1,13 @@
+#import needed module
 import random
 
+#create random number between 0 and 20
 random_number = random.randint(0, 21)
 
+#counter for wrong guesses
 wrong_guess = 0
 
+#while loop for guessing
 while True:
     user_guess = input("Type a number between 0 and 20: ")
     if user_guess.isdigit():
