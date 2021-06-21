@@ -9,8 +9,7 @@ while True:
     if user_guess.isdigit():
         user_guess = int(user_guess)
         if user_guess == random_number:
-            print(
-                f"You guessed right!'\n'The correct answer is {random_number}!")
+            print(f"You guessed right!'\n'The correct answer is {random_number}!")
             print(f"You needed {wrong_guess} tries!")
             quit()
         elif user_guess > random_number:
